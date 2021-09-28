@@ -53,9 +53,8 @@
       pre {
         position: absolute;
         color: white;
-        font-family: "kurale";
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: larger;
-        text-shadow: 1px 1px 1px black;
       }
       .dropdown {
         position: absolute;
@@ -70,10 +69,12 @@
         width: 440px; 
       }
       .btnDropdownItem{
+    
         padding: 0 10px;
         height: 50px;
         width: 440px; 
         font-weight: bold;
+      font-size: 14px;
 
       }
  
@@ -81,19 +82,26 @@
         float: right;
        font-size: 2em;
       } 
-.select{
-    display: block;
+.form-select-sm{
+   
     width: 100%;
-    font-size: 0.8em;
-}
-.btnSearch{
-    float:right;
-    font-size:0.8em;
     
+  
+   
+}
+
+.btnSearch{
+  position: absolute;
+  right: 10px;
+  bottom:10px;  
+  font-size:0.8em; 
+   height: 30px;
+   
 }
 .dropdown-menu{
     padding: 0;
 }
+
     </style>
   </head>
   <body>
@@ -162,27 +170,59 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li class="btnDropdownItem">Region
-              <select name="region" id="selectRegion" class="select">
-                  <option value="Phnom Penh">Phnom Penh</option>
-                  <option value="Battambang">Battambang</option>
-                  <option value="Kompot">Kompot</option>
-                  <option value="Siem Reap">Siem Reap</option>
+             <select name="region" id="selectRegion" class="form-select-sm">
+                
+                <option value="All region">All region</option>
+                <option value="Banteay Meanchey">Phnom Penh</option>
+                <option value="Battambang">Battambang</option>
+                <option value="Kampong Cham">Kampong Cham</option>
+                <option value="Kampong Chhnang">Kampong Chhnang</option>
+                <option value="Kampong Speu">Kampong Speu</option>
+                <option value="Banteay Meanchey">Phnom Penh</option>
+                <option value="Kampong Thom">Kampong Thom</option>
+                <option value="Kampot">Kampot</option>
+                <option value="Kandal">Kandal</option>
+                <option value="Koh Kong">Koh Kong</option>
+                <option value="Kratie">Kratie</option>
+                <option value="Mondulkiri">Mondulkiri</option>
+                <option value="Phnom Penh">Phnom Penh</option>
+                <option value="Preah Vihear">Preah Vihear</option>
+                <option value="Prey Veng">Prey Veng</option>
+                <option value="Pursat">Pursat</option>
+                <option value="Ratanak Kiri">Ratanak Kiri</option>
+                <option value="Siem Reap">Siem Reap</option>
+                <option value="Preah Sihanouk">Preah Sihanouk</option>
+                <option value="Stung Treng">Stung Treng</option>
+                <option value="Svay Rieng">Svay Rieng</option>
+                <option value="Takeo">Takeo</option>
+                <option value="Oddar Meanchey">Oddar Meanchey</option>
+                <option value="Kep">Kep</option>
+                <option value="Pailin">Pailin</option>
+                <option value="Tboung Khmum">Tboung Khmum</option>
+           
               </select>
+
           </li>
           <li class="btnDropdownItem">Kind of place
-            <select name="place" id="selectPlace" class="select">
-                <option value="Phnom Penh">Phnom Penh</option>
-                <option value="Battambang">Battambang</option>
-                <option value="Kompot">Kompot</option>
-                <option value="Siem Reap">Siem Reap</option>
+            <select name="place" id="selectPlace" class="form-select-sm">
+                <option value="All place">All place</option>
+                <option value="Modern">Modern</option>
+                <option value="Peaceful">Peaceful</option>
+                <option value="Nature">Nature</option>
+                <option value="History">History</option>
+                <option value="Outdoor">Outdoor</option>
+                <option value="Indoor">Indoor</option>
+                <option value="Event">Event</option>
             </select>
         </li>
         <li class="btnDropdownItem">Activity
-            <select name="activity" id="selectActivity" class="select">
-                <option value="Phnom Penh">Phnom Penh</option>
-                <option value="Battambang">Battambang</option>
-                <option value="Kompot">Kompot</option>
-                <option value="Siem Reap">Siem Reap</option>
+            <select name="activity" id="selectActivity" class="form-select-sm">
+                <option value="All activity">All activity</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Sightseeing">Sightseeing</option>
+                <option value="Eating & Drinking">Eating & Drinking</option>
+                <option value="Learning">Learning</option>
+                <option value="Entertaining">Entertaining</option>
             </select>
         </li>
         <li class="btnDropdownItem">
