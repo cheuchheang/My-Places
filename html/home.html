@@ -16,6 +16,11 @@
 
     <title>Places_Slider</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
       .carousel-item {
         height: 100vh;
 
@@ -46,29 +51,19 @@
         width: 440px;
         border-radius: 15px;
       }
-      input {
+      #btnDropdown {
+        float: left;
         height: 40px;
-        width: 400px;
+        width: 440px;
         border: none;
         border-radius: 15px;
-      }
-      input:focus {
-        outline: none;
+        text-align: left;
+        padding-left: 10px;   
       }
       span {
-        vertical-align: bottom;
-      }
-
-      button {
         float: right;
-        height: 40px;
-        width: 40px;
-        border-radius: 15px;
-        border: none;
-        background-color: white;
-        cursor: pointer;
+       font-size: 2em;
       }
-
       .btn {
         position: absolute;
         top: 8vh;
@@ -107,13 +102,10 @@
         </div>
       </div>
       <div id="container">
+          
         <div id="search">
           <form>
-            <input type="text" placeholder="Search..." />
-
-            <button type="submit">
-              <span class="material-icons"> search </span>
-            </button>
+            <button id=btnDropdown>Search...<span class="material-icons"> search </span></button>
           </form>
         </div>
         <a href="" class="btn btn-lg">Region you want to explore</a>
