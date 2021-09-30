@@ -28,9 +28,9 @@ h3{
 }
 .button button{
     position: absolute;
-    right: 10%;
-    padding: 4px;
-    width:5%;
+    right: 2%;
+    padding: 7px;
+    width:8%;
 }
 #review p{
     display: inline; 
