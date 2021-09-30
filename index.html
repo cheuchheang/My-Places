@@ -1,162 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-=======
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
-    <title>Places_Slider</title>
     <style>
-      .carousel-item {
-        height: 100vh;
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-        background-color: #000;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        opacity: 0.8;
-      }
-      #myCarousel {
-        position: relative;
-        display: flex;
-        justify-content: center;
-      }
-      #container {
-        position: absolute;
-        display: flex;
-        width: 50%;
-        height: 50vh;
-        justify-content: center;
-        top: 40vh;
-      }
-      #search {
-        position: absolute;
-        background-color: white;
-        height: auto;
-        width: 440px;
-        border-radius: 15px;
-      }
-      input {
-        height: 40px;
-        width: 400px;
-        border: none;
-        border-radius: 15px;
-      }
-      input:focus {
-        outline: none;
-      }
-      span {
-        vertical-align: bottom;
-      }
+        html,
+        body {
+            height: 100%;
+            background: none;
+        }
 
-      button {
-        float: right;
-        height: 40px;
-        width: 40px;
-        border-radius: 15px;
-        border: none;
-        background-color: white;
-        cursor: pointer;
-      }
+        .col-sm-4 {
+            border: 1px solid black;
+            height: 100%;
+        }
 
-      .btn {
-        position: absolute;
-        top: 8vh;
-        background-color: #00d8ff;
-        color: #fff;
-      }
-      pre {
-        position: absolute;
-        top: 16vh;
-        color: white;
-        font-family: "kurale";
-        font-size: larger;
-        text-shadow: 1px 1px 1px black;
-      }
+        .main_text h1 {
+            color: white;
+            font-size: 20px;
+            margin-top: 240px;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .main_text svg {
+            width: 30px;
+            margin-top: 240px;
+            float: left;
+            margin-left: 20px;
+        }
+
+        #card_1:hover .main_text {
+            display: none;
+        }
+
+        #card_2:hover .main_text {
+            display: none;
+        }
+
+        .btn-info {
+            
+            margin-left: 20px;
+            margin-top: 80px;
+            float: left;
+           
+        }
     </style>
-  </head>
-  <body>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="false">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/royal palace.jpg" alt="" />
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/Phnom-Penh-Night-Market.png" alt="" />
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/angkor wat.jpg" alt="" />
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/movie.jpg" alt="" />
-        </div>
-      </div>
-      <div id="container">
-        <div id="search">
-          <form>
-            <input type="text" placeholder="Search..." />
+</head>
 
-            <button type="submit">
-              <span class="material-icons"> search </span>
-            </button>
-          </form>
+<body>
+    <div class="team-grid">
+
+        <div class="container">
+
+            <div class="row  people d-flex  justify-content-center">
+                <p style="color: black;margin-top: 10px;"> <b>Kind of places</b></p>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./../assets/Test.jpg)"
+                        onclick="window.open">
+                        <div class="main_text">
+                            <h1>
+                                Modern</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+
+                            <h3 class="name">Tim Cook</h3>
+                            <p class="title">Android Developer</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(https://images.unsplash.com/photo-1632163803231-123e953601b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1548&q=80)">
+                        <div class="main_text">
+                            <h1>
+                                Peaceful</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+                            <h3 class="name">Michael Clarke</h3>
+                            <p class="title">Cricker</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(https://images.unsplash.com/photo-1621063223871-72880cf5eb51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80)"
+                        onclick="window.open">
+                        <div class="main_text">
+                            <h1>
+                                Nature</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+
+                            <h3 class="name">Tim Cook</h3>
+                            <p class="title">Android Developer</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(https://images.unsplash.com/photo-1440948267132-cbf6e5f4bd88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2502&q=80)">
+                        <div class="main_text">
+                            <h1>
+                                History</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+                            <h3 class="name">Michael Clarke</h3>
+                            <p class="title">Cricker</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p style="color: black;margin-top: 10px;"> <b>Places base on</b></p>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
+                        onclick="window.open">
+                        <div class="main_text">
+                            <h1>
+                                Shopping</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+
+                            <h3 class="name">Tim Cook</h3>
+                            <p class="title">Android Developer</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                        <div class="main_text">
+                            <h1>
+                                Sighseeing</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+                            <h3 class="name">Michael Clarke</h3>
+                            <p class="title">Cricker</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
+                        onclick="window.open">
+                        <div class="main_text">
+                            <h1>
+                                Eating and Drinking</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+
+                            <h3 class="name">Tim Cook</h3>
+                            <p class="title">Android Developer</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                        <div class="main_text">
+                            <h1>
+                                Learning</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+                            <h3 class="name">Michael Clarke</h3>
+                            <p class="title">Cricker</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-12 item">
+                    <div class="box" style="background-image: url(./../assets/songsa2.jpg);border-radius: 10px; ">
+
+                        <p style="text-align: left;
+                        padding-left: 6px; margin: 40px 20px;font-size: 25px; color: black;">Want to save your favorite
+                            places for later?
+                        </p>
+                        <br>
+                        <button type="button" class="btn btn-info">Get Start!</button>
+
+
+
+                    </div>
+                </div>
+                <p style="color: black;margin-top: 10px;"> <b>Places in Phnom Penh</b></p>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
+                        onclick="window.open">
+                        <div class="main_text">
+                            <h1>
+                                Modern</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+
+                            <h3 class="name">Tim Cook</h3>
+                            <p class="title">Android Developer</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                        <div class="main_text">
+                            <h1>
+                                Peaceful</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+                            <h3 class="name">Michael Clarke</h3>
+                            <p class="title">Cricker</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
+                        onclick="window.open">
+                        <div class="main_text">
+                            <h1>
+                                Modern</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+
+                            <h3 class="name">Tim Cook</h3>
+                            <p class="title">Android Developer</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                        <div class="main_text">
+                            <h1>
+                                Peaceful</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+                            <h3 class="name">Michael Clarke</h3>
+                            <p class="title">Cricker</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p style="color: black;margin-top: 10px;"> <b>Provinces</b></p>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
+                        onclick="window.open">
+                        <div class="main_text">
+                            <h1>
+                                Modern</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+
+                            <h3 class="name">Tim Cook</h3>
+                            <p class="title">Android Developer</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                        <div class="main_text">
+                            <h1>
+                                Peaceful</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+                            <h3 class="name">Michael Clarke</h3>
+                            <p class="title">Cricker</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
+                        onclick="window.open">
+                        <div class="main_text">
+                            <h1>
+                                Modern</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+
+                            <h3 class="name">Tim Cook</h3>
+                            <p class="title">Android Developer</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                        <div class="main_text">
+                            <h1>
+                                Peaceful</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                        <div class="cover">
+                            <h3 class="name">Michael Clarke</h3>
+                            <p class="title">Cricker</p>
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="" class="btn btn-lg">Region you want to explore</a>
-        <pre>
-        Finding Places to go doesn’t have to be that hard and time consuming  
-                            Place is here to ease that burden from you 
-                                             You go enjoy your day !</pre
-        >
-      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        </script>
+</body>
+
 </html>
->>>>>>> 687754e4739e7ee304090be909b1fadb0b502f24
