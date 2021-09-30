@@ -28,9 +28,12 @@ h3{
 }
 .button button{
     position: absolute;
+    
     right: 2%;
     padding: 7px;
     width:8%;
+    color: white;
+    background-color: #27bcd3;
 }
 #review p{
     display: inline; 
@@ -45,4 +48,9 @@ h3{
     height: 30px;
     display: inline;
     vertical-align: middle;
+}
+
+.comment1{
+    margin-left: 3%;
+    margin-top: 0.5%;
 }
