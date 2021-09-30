@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+#title{
+    text-align: center;
+}
+#button{
+    margin-top: 30px;
+}
+.folder {
+    margin-left:20px;
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding-left: 50px;
+    background-color: rgb(252, 253, 253);
+    text-align: left;
+    display: block;
+    border:solid 1px black ;
+    box-shadow: 2px 4px #15a2b8 ;
+}
+.folder span{
+    vertical-align: middle;
+    padding-right: 10px;
+    color: black;
+}
+.folder_one{
+    width: 300px;
+    background-color: rgb(201, 169, 169);
+}rgb(12, 147, 201)
