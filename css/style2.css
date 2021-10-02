@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+  }
+  
+  #Container {
+    margin: auto;
+    display: flex;
+    width: 90%;
+    height: 80px;
+    background-color: #15a2b8;
+    justify-content: space-around;
+    align-items: center;
+  }
+  label{
+    color:#fff;
+  }
+  
+  .form-select-sm {
+    text-align: left;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+  }
