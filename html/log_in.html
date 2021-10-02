@@ -1,0 +1,74 @@
+<!-- Log In Page "HTML + CSS" -->
+<!-- Date: 30 Sep 2021 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+
+    <style>
+        .logInBox {
+            border: 1px solid rgb(21, 162, 184);
+            border-radius: 5px;
+            padding: 30px;
+            margin: auto;
+            width: 30%;
+            height: 45vh;
+            background-color: rgb(219, 234, 236);
+        }
+
+        .logInAndSignUp {
+            margin: auto;
+            text-align: center;
+        }
+
+        .logInButton {
+            display: block;
+            margin: auto;
+            background-color: rgb(21, 162, 184);
+            border-radius: 3px;
+        }
+        #facebookIcon{
+            margin: 8px;
+        }
+        #gmailIcon{
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logInBox">
+        <span class="material-icons" style="padding: 1%; color: rgb(21, 162, 184);">close</span><br>
+        <div class="logInAndSignUp">
+            <!-- <p class="logIn" type="button">Log in</p> | <p class="signUp" type="button">Sign Up</p><br><br><br> -->
+            <span style="font-size: 22px; font-family: 'Work Sans', sans-serif; color: rgb(21, 162, 184);"><ins>Log
+                    in</ins></span>
+            <span style="font-size: 25px; font-family: 'Work Sans', sans-serif;">|</span>
+            <span style="font-size: 21px; font-family: 'Work Sans', sans-serif;">Sign Up</span>
+        </div><br><br>
+        <input class="email" type="email" name="email" placeholder="Email"
+            style="width: 95%; height: 9%; border: 1px solid rgb(21, 162, 184); border-radius: 3px;"><br><br>
+        <input type="password" name="password" placeholder="Password" class="password"
+            style="width: 95%; height: 9%; border: 1px solid rgb(21, 162, 184); border-radius: 3px;"><br><br>
+        <span style="font-size: 13px; font-family: 'Work Sans', sans-serif;">Continue with:</span><br>
+        <img id="facebookIcon" style="height: 28px;"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTUxMiAyNTZjMCAxNDEuMzg2NzE5LTExNC42MTMyODEgMjU2LTI1NiAyNTZzLTI1Ni0xMTQuNjEzMjgxLTI1Ni0yNTYgMTE0LjYxMzI4MS0yNTYgMjU2LTI1NiAyNTYgMTE0LjYxMzI4MSAyNTYgMjU2em0wIDAiIGZpbGw9IiM0YTdhZmYiIGRhdGEtb3JpZ2luYWw9IiM0YTdhZmYiIHN0eWxlPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0yNjcuMjM0Mzc1IDUxMS43MzgyODFjMTM2LjE3MTg3NS01Ljg3ODkwNiAyNDQuNzY1NjI1LTExOC4xMjEwOTMgMjQ0Ljc2NTYyNS0yNTUuNzM4MjgxIDAtLjk5NjA5NC0uMDI3MzQ0LTEuOTg4MjgxLS4wMzkwNjItMi45ODQzNzVsLTE3Ny42OTkyMTktMTc3LjcwMzEyNS0xOTAgMTk4LjU5Mzc1IDEwNS41NjY0MDYgMTA1LjU2NjQwNi00OC42NzU3ODEgNjYuMTgzNTk0em0wIDAiIGZpbGw9IiMwMDUzYmYiIGRhdGEtb3JpZ2luYWw9IiMwMDUzYmYiIHN0eWxlPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zMzQuMjYxNzE5IDc1LjMxMjV2NTcuOTY4NzVzLTY2LjU1NDY4OC05LjY2MDE1Ni02Ni41NTQ2ODggMzMuMjc3MzQ0djQyLjkzNzVoNjAuMTEzMjgxbC03LjUxMTcxOCA2NS40ODA0NjhoLTUyLjYwMTU2M3YxNzAuNjc5Njg4aC02Ni41NTQ2ODd2LTE3MC42Nzk2ODhsLTU2Ljg5NDUzMi0xLjA3NDIxOHYtNjQuNDA2MjVoNTUuODIwMzEzdi00OS4zNzg5MDZzLTMuNjgzNTk0LTczLjQ1NzAzMiA2OC43MDMxMjUtODYuOTQ5MjE5YzMwLjA1ODU5NC01LjYwNTQ2OSA2NS40ODA0NjkgMi4xNDQ1MzEgNjUuNDgwNDY5IDIuMTQ0NTMxem0wIDAiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiNmZmZmZmYiIHN0eWxlPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zMzQuMjYxNzE5IDEzMy4yODEyNXYtNTcuOTY4NzVzLTM1LjQyMTg3NS03Ljc1LTY1LjQ4MDQ2OS0yLjE0NDUzMWMtNC42OTUzMTIuODc1LTkuMDYyNSAyLjAwNzgxMi0xMy4xMzY3MTkgMy4zNDc2NTZ2MzY5LjE0MDYyNWgxMi4wNjI1di0xNzAuNjc5Njg4aDUyLjU5NzY1N2w3LjUxNTYyNC02NS40ODA0NjhoLTYwLjExMzI4MXMwIDAgMC00Mi45Mzc1IDY2LjU1NDY4OC0zMy4yNzczNDQgNjYuNTU0Njg4LTMzLjI3NzM0NHptMCAwIiBmaWxsPSIjZGNlMWViIiBkYXRhLW9yaWdpbmFsPSIjZGNlMWViIiBzdHlsZT0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" />
+        <img id="gmailIcon" style="height: 28px;"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSIiIGQ9Ik00NTIsMTg4LjIyNWwtMzAsNTQuMjk2VjQwNmwzMCwzMGgxNWMyNC44MTQsMCw0NS0yMC4xODYsNDUtNDVWMTM5LjYzM0w0NTIsMTg4LjIyNXoiIGZpbGw9IiNjMTAwMWYiIGRhdGEtb3JpZ2luYWw9IiNjMTAwMWYiIGNsYXNzPSIiPjwvcGF0aD4KPHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iIiBkPSJNNjAsMTg4LjIzMUwwLDEzOS42MzZWMzkxYzAsMjQuODE0LDIwLjE4Niw0NSw0NSw0NWgxNWwzMC0zMFYyNDIuNTI5TDYwLDE4OC4yMzF6IiBmaWxsPSIjZTUwMDI3IiBkYXRhLW9yaWdpbmFsPSIjZTUwMDI3Ij48L3BhdGg+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8cG9seWdvbiBzdHlsZT0iIiBwb2ludHM9IjQ0OC40LDc2IDI1NiwzMDkuNjk5IDYzLjYsNzYgICIgZmlsbD0iI2NhZThmOSIgZGF0YS1vcmlnaW5hbD0iI2NhZThmOSIgY2xhc3M9IiI+PC9wb2x5Z29uPgoJPHBhdGggc3R5bGU9IiIgZD0iTTQ1MiwxODguMlY0MzZINjBWMTg4LjJsMTY0LjIsMTMyLjI5OWM4LjM5OSw4LjQwMSwyMC4xLDEyLjYwMSwzMS44LDEyLjYwMSAgIGMxMS43LDAsMjMuNDAxLTQuMiwzMS44LTEyLjYwMUw0NTIsMTg4LjJ6IiBmaWxsPSIjY2FlOGY5IiBkYXRhLW9yaWdpbmFsPSIjY2FlOGY5IiBjbGFzcz0iIj48L3BhdGg+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik00NTIsMTg4LjJWNDM2SDI1NlYzMzMuMWMxMS43LDAsMjMuNDAxLTQuMiwzMS44LTEyLjYwMUw0NTIsMTg4LjJ6IiBmaWxsPSIjYjdlMGY2IiBkYXRhLW9yaWdpbmFsPSIjYjdlMGY2IiBjbGFzcz0iIj48L3BhdGg+Cgk8cG9seWdvbiBzdHlsZT0iIiBwb2ludHM9IjQ0OC40LDc2IDI1NiwzMDkuNjk5IDI1Niw3NiAgIiBmaWxsPSIjYjdlMGY2IiBkYXRhLW9yaWdpbmFsPSIjYjdlMGY2IiBjbGFzcz0iIj48L3BvbHlnb24+CjwvZz4KPHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iIiBkPSJNNTEyLDEyMXYxOC42TDMxMC4xMDEsMzQxLjQ5OWMtMTQuMTAxLDE0LjQtMzQuMDAyLDIxLjktNTQuMTAxLDIxLjlzLTM5LTcuNS01My4xMDEtMjEuODk5TDAsMTM5LjYgIFYxMjFjMC0yNC4zLDIwLjA5OS00NSw0NS00NWgxOC42TDI1NiwyNjcuNEw0NDguNCw3Nkg0NjdDNDkxLjkwMSw3Niw1MTIsOTYuNyw1MTIsMTIxeiIgZmlsbD0iI2ZkMDAzYSIgZGF0YS1vcmlnaW5hbD0iI2ZkMDAzYSIgY2xhc3M9IiI+PC9wYXRoPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSIiIGQ9Ik01MTIsMTIxdjE4LjZMMzEwLjEwMSwzNDEuNDk5Yy0xNC4xMDEsMTQuNC0zNC4wMDIsMjEuOS01NC4xMDEsMjEuOVYyNjcuNEw0NDguNCw3Nkg0NjcgIEM0OTEuOTAxLDc2LDUxMiw5Ni43LDUxMiwxMjF6IiBmaWxsPSIjZTUwMDI3IiBkYXRhLW9yaWdpbmFsPSIjZTUwMDI3Ij48L3BhdGg+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
+        <button type="submit" class="logInButton"
+            style="width: 30%; height: 11%; font-size: 15px; font-family:'Roboto', sans-serif; border: 1px solid rgb(40, 158, 177);">Login</button>
+    </div>
+</body>
+</html>
