@@ -1,0 +1,30 @@
+.locationCard {
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid rgb(145, 145, 145);
+    height: 40vh;
+    width: 90%;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 18px;
+}
+h3 {
+    font-family: 'Rubik', sans-serif;
+}
+.address {
+    font-family: 'Open Sans', sans-serif;
+}
+.email {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.phone {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.facebookPage {
+    font-family: 'Open Sans', sans-serif;
+}
+.imgMap{
+    float: right;
+}
