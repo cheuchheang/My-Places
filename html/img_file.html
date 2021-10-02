@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        #fileInput_1 {
+            display: none;
+        }
+
+        #fileInput_2 {
+            display: none;
+        }
+        #fileInput_3{
+            display: none;
+        }
+        #icon {
+            /*margin-left: 87px;*/
+            width: 65%;
+            height: 90vh;
+            cursor: pointer;
+            float: left;
+        }
+
+        #icon_1 {
+
+            width: 35%;
+            height: 30vh;
+            cursor: pointer;
+            float: right;
+        }
+
+        #icon_2 {
+
+            width: 35%;
+            height: 30vh;
+            cursor: pointer;
+            float: right;
+        }
+
+        #icon_3 {
+
+            width: 35%;
+            height: 30vh;
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="fileInput">
+            <img id="icon" src="./../assets/image.png" />
+        </label>
+        <input id="fileInput" onchange="handleUploadFile()" type="file" />
+        <label for="fileInput_1">
+            <img id="icon_1" src="./../assets/image.png" />
+        </label>
+        <input id="fileInput_1" onchange="handleUploadFile()" type="file" />
+        <label for="fileInput_2">
+            <img id="icon_2" src="./../assets/image.png" />
+        </label>
+        <input id="fileInput_2" onchange="handleUploadFile()" type="file" />
+        <label for="fileInput_3">
+            <img id="icon_3" src="./../assets/image.png" />
+        </label>
+        <input id="fileInput_3" onchange="handleUploadFile()" type="file" />
+    </div>
+    <script>
+        document.getElementById("fileInput").onchange = function () {
+            console.log(document.getElementById("fileInput").value);
+            document.getElementById("icon").src = './../assets/' +
+                document.getElementById("fileInput").files[0].name
+
+
+        };
+
+        document.getElementById("fileInput_1").onchange = function () {
+            console.log(document.getElementById("fileInput_1").value);
+            document.getElementById("icon_1").src = './../assets/' +
+                document.getElementById("fileInput_1").files[0].name
+
+
+        };
+        document.getElementById("fileInput_2").onchange = function () {
+            console.log(document.getElementById("fileInput_2").value);
+            document.getElementById("icon_2").src = './../assets/' +
+                document.getElementById("fileInput_2").files[0].name
+
+
+        };
+        document.getElementById("fileInput_3").onchange = function () {
+            console.log(document.getElementById("fileInput_3").value);
+            document.getElementById("icon_3").src = './../assets/' +
+                document.getElementById("fileInput_3").files[0].name
+
+
+        };
+
+    </script>
+</body>
+
+</html>
