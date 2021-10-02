@@ -15,18 +15,21 @@ ul,li {
     list-style-type: none;
 }
 
-.left_container {
+.leftContainer {
     float: left;
-    width: 50%;
+    width: 33%;
     list-style-type: none;
 }
 
-.right_container {
+.centerContainer {
     float: left;
-    width: 50%;
+    width: 33%;
 }
-
-.under_container {
+.rightContainer{
+    float: left;
+    width: 33%;
+}
+.underContainer {
     display: block;
     width: 100%;
 }
