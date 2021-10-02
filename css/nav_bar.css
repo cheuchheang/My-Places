@@ -1,0 +1,98 @@
+/* start Nav-bar */
+#navContainer {
+    
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+  }
+  #logo {
+    position: absolute;
+    margin-bottom: 100px;
+    
+  }
+  .head {
+    float: right;
+    margin-right: 15px;
+  }
+  .Nav {
+    list-style-type: none;
+    margin-top: 25px;
+    display: inline-flex;
+    padding-left: 30px;
+    color: black;
+    margin-bottom: 30px;
+    
+  }
+  .Dropdown ul li {
+    list-style-type: none;
+    padding-bottom: 20px;
+    color: black;
+    
+  }
+  .Dropdown ul li:hover {
+    list-style-type: none;
+    padding-bottom: 20px;
+    color: black;
+    /* background-color: rgb(21, 162, 184); */
+  }
+  .Dropdown {
+    display: none;
+    position: absolute; /* only dak absolute can we dak z-index */
+    z-index: 1;
+    padding: 5px 2px;
+    margin-top: 20px;
+  }
+  .Nav:hover .Dropdown {
+    display: block; 
+  }
+  .kind{
+    font-weight: 700;
+  }
+  .Nav .Dropdown a{
+    text-decoration: none;
+    color: black;
+  }
+  .Nav .Dropdown a:hover{
+    text-decoration:underline;
+    color: rgba(21, 162, 184, 1);
+
+  }
+  @media only screen and (max-width: 550px) {
+    /* mobile screen */
+    #logo {
+      color: black;
+      margin-top: 25px;
+      margin-left: 20px;
+    }
+    .head {
+      margin-right: 15px;
+    }
+    .Nav {
+      margin-top: 25px;
+      padding-left: 30px;
+    }
+    .Dropdown {
+      background-color: rgb(255, 255, 255);
+      width: 30%;
+    }
+  }
+  @media only screen and (min-width: 551px) /* desktop & tablet*/ {
+    #logo {
+      color: #fff;
+      margin-top: 25px;
+      margin-left: 5%;
+    }
+    .head {
+      margin-right: 5%;
+    }
+    .Nav {
+      margin-top: 25px;
+      padding-left: 110px;
+    }
+    .Dropdown {
+      background-color: #fff;
+      width: 300px;
+    }
+  }
+  /* End Nav bar */
