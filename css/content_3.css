@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .img_content {
+    width: 94%;
+    height: 90vh;
+    margin-left: 6%;
+  }
+
+  #img_1 {
+    margin-top: 5%;
+    background-color: red;
+    width: 54%;
+    height: 99.5vh;
+    float: left;
+    border-top-left-radius: 10px;
+    border-radius: 5px;
+    margin-right:1%;
+
+  }
+
+  #imges {
+    width: 39%;
+    height: 32vh;
+    float: left;
+    margin-top: 5%;
+    border-radius: 5px;
+    margin-bottom: 1%;
+
+  }
+
+  .imges1 {
+    width: 39%;
+    height: 32vh;
+    float: left;
+    border-radius: 5px;
+    margin-bottom: 1%;
+
+
+  }
+
+  /* Start TextContent  */
+  .TextContent #Text {
+    margin-top: 100px;
+    width: 88%;
+    margin-left: 6%;
+    font-size: 15px;
+    line-height: 2em;
+    text-align: justify;
+  }
+
+  .TextContent #Text::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .NoteProximity {
+    display: flex;
+  }
+
+  .NoteProximity p {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1em;
+    margin-bottom: 10px;
+
+  }
+
+  .NoteProximity .Note {
+    margin-left: 6%;
+    width: 50%;
+    margin-right: 30px;
+    border-right: 5px solid black;
+
+  }
+
+  .NoteProximity .Proximity {
+    width: 50%;
+    margin-bottom: 50px;
+    list-style-type: disc;
+  }
+
+  .NoteProximity ul li {
+    font-size: 15px;
+    margin-left: 0px;
+
+  }
+
+  .locationCard {
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid rgb(145, 145, 145);
+    height: 40vh;
+    width: 88%;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 18px;
+    margin-left: 6%;
+  }
+
+  h3 {
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .address {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .email {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .phone {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .facebookPage {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .imgMap {
+    float: right;
+  }
+
+
+
+  .rating_box {
+    /*margin: 30px;*/
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 88%;
+    height: 18vh;
+    border-radius: 10px;
+    margin-right: 40px;
+  }
+
+  .name_of_rater {
+    margin-left: 20px;
+    font-size: 25px;
+    margin-right: 25px;
+    padding: 15px;
+
+
+  }
+
+  .fa {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+
+  .checked {
+    text-shadow: 0 0 1px #000;
+    color: white;
+  }
+
+  .checked1 {
+    text-shadow: 0 0 1px #000;
+    color: yellow;
+  }
+
+  .rating_box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  #comment_box {
+    width: 75%;
+    height: 5vh;
+    border-radius: 10px;
+
+
+  }
+
+  #smt_btn {
+    width: 10%;
+    height: 5vh;
+    margin-left: 30px;
+    background-color: #27bcd3;
+    border-radius: 10px;
+    border-style: none;
+
+  }
+
+  button:hover {
+    color: white;
+  }

@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   }
   /* Start Slider */
   .carousel-item {
@@ -174,12 +175,14 @@
     margin-top: 240px;
     float: left;
     margin-left: 20px;
+    text-shadow: 1px 1px black;
   }
   .main_text svg {
     width: 30px;
     margin-top: 240px;
     float: left;
     margin-left: 20px;
+    color: white;
   }
   #card_1:hover .main_text {
     display: none;
@@ -261,6 +264,10 @@
     letter-spacing: 2px;
     font-size: 13px;
     margin-bottom: 20px;
+    padding: 10px;
+    font-size: 10px;
+    color: white;
+    
   }
   .social {
     font-size: 18px;

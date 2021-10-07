@@ -70,54 +70,76 @@
         }
     </style>
 </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./../css/NavBarLogin.css">
 
+</head>
 <body>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="./../css/nav_bar.css">
-    </head>
-    <body>
-        <!-- Navigation Bar -->
-      <nav id=navContainer>
-        <span id="logo" style="color: black;">Logo</span>
-        <ul class="head">
-          <li class="Nav" id="places">Places
-              <div class="Dropdown">
-            <ul>
-              <li class="kind">Kind of place</li>
-              <li><a href="#">Modern</a></li>
-              <li><a href="#">Peaceful & Nature</a></li>
-              <li><a href="#">Openspace</a></li>
-              <li><a href="#">Indoor</a></li>
-              <li><a href="#">Outdoor</a></li>
-              <li><a href="#">Coffee Shop</a>s</li>
-              <li><a href="#">Restuarants</a></li>
-              <li><a href="#">Street Food</a></li>
-              <li><a href="#">Adventurous</a></li>
+        <link rel="stylesheet" href="./../css/nav.css">
+      </head>
+    
+      <body>
+        <nav id=navContainer >
+            <span id="logo">Logo</span>
+            <ul class="head" style="margin-top: 16px;">
+              <li class="Nav" id="places">Places
+                <div class="Dropdown">
+                  <ul>
+                    <li class="kind">Kind of place</li>
+                    <li><a href="#">Modern</a></li>
+                    <li><a href="#">Peaceful & Nature</a></li>
+                    <li><a href="#">Openspace</a></li>
+                    <li><a href="#">Indoor</a></li>
+                    <li><a href="#">Outdoor</a></li>
+                    <li><a href="#">Coffee Shops</a></li>
+                    <li><a href="#">Restuarants</a></li>
+                    <li><a href="#">Street Food</a></li>
+                    <li><a href="#">Adventurous</a></li>
+                  </ul>
+                </div>
+              </li>
+        
+        
+              <li class="Nav">Activities
+                <div class="Dropdown">
+                  <ul>
+                    <li class="kind">Places base on activities</li>
+                    <li><a href="#"> Eating & Drinking</a></li>
+                    <li><a href="#"> Entertaining</a></li>
+                    <li><a href="#">Co-working</a></li>
+                    <li><a href="#">Studying</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#">Sightseeing</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="Nav"><a href="#" id="favorite">Favorite</a></li>
+              <li class="Nav"><a href="#" id="region">Region</a></li>
+              <li class="Nav">User
+                <div class="Dropdown">
+                  <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Post Something</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+              </li>
             </ul>
-            </div>
-          </li>
-            
-         
-          <li class="Nav">Activities
-            <div class="Dropdown">
-              <ul>
-              <li class="kind">Places base on activities</li>
-              <li><a href="#"> Eating & Drinking</a></li>
-              <li><a href="#"> Entertaining</a></li>
-              <li><a href="#">Co-working</a></li>
-              <li><a href="#">Studying</a></li>
-              <li><a href="#">Shopping</a></li>
-              <li><a href="#">Sightseeing</a></li>
-            </ul>
-          </div>
-         </li>
-          <li class="Nav">Login</li>
-        </ul>  
-      </nav>
-    </body>
+          </nav>
+      </body>
+      <br>
+<body>
+    
     <div class="team-grid" >
 
         <div class="container" >
@@ -621,68 +643,123 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./../css/footer.css">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
-   
-</head>
-<body>
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+  
+      .footer {
+        padding: 40px;
+        width: 100%;
+        background-color: rgb(21, 162, 184);
+        list-style: none;
+      }
+  
+      .down ul,
+      li {
+        list-style-type: none;
+      }
+  
+      .leftContainer {
+        float: left;
+        width: 33%;
+        list-style-type: none;
+      }
+  
+      .centerContainer {
+        float: left;
+        width: 33%;
+      }
+  
+      .rightContainer {
+        float: left;
+        width: 33%;
+      }
+  
+      .underContainer {
+        display: block;
+        width: 100%;
+      }
+  
+      h5 {
+        color: rgb(199, 249, 255);
+      }
+  
+      .centerContainer li {
+        color: rgb(199, 249, 255);
+      }
+  
+      #contact {
+        color: rgb(28, 82, 92);
+      }
+  
+      pre {
+        color: rgb(28, 82, 92);
+      }
+    </style>
+  </head>
+  
+  <body>
     <footer>
-        <section class="footer">
-            <ul>
+      <section class="footer">
+        <ul class="down">
+          <li>
+            <div class="leftContainer">
+              <ul>
                 <li>
-                    <div class="leftContainer">
-                        <ul>
-                            <li>
-                                <h5>More Activity</h5>
-                            </li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Shopping</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Sightseeing</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Eating & Drinking</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Learning</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Entertaining</a></li>
-                        </ul>
-                    </div>
+                  <h5>More Activity</h5>
                 </li>
-                <li>
-                    <div class="centerContainer">
-                        <ul>
-                            <li>
-                                <h5>More Kind of Place</h5>
-                            </li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Modern</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">History</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Outdoor</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Indoor</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Nature</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Event</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="rightContainer">
-                        <ul>
-                            <li>
-                                <h5>More Region</h5>
-                            </li>
-                            <li> <a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kampot</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Sihanouk Ville</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Koh Kong</a></li>
-                            <li> <a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kep</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); "> Kratie</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kampong Cham</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <div class="underContainner">
-                <ul>
-                    <h5 id="contact">CONTACT US !</h5>
-                    <pre>2007st Kakab, Khan Puthisen Chey, Phnom Penh     +855 10 466 147     @Place</pre>
-                </ul>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Shopping</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Sightseeing</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Eating & Drinking</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Learning</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Entertaining</a></li>
+              </ul>
             </div>
-        </section>
+          </li>
+          <li>
+            <div class="centerContainer">
+              <ul>
+                <li>
+                  <h5>More Kind of Place</h5>
+                </li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Modern</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">History</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Outdoor</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Indoor</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Nature</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Event</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="rightContainer">
+              <ul>
+                <li>
+                  <h5>More Region</h5>
+                </li>
+                <li> <a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kampot</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Sihanouk Ville</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Koh Kong</a></li>
+                <li> <a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kep</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); "> Kratie</a></li>
+                <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kampong Cham</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="underContainner">
+          <ul>
+            <h5 id="contact">CONTACT US !</h5>
+            <pre>2007st Kakab, Khan Puthisen Chey, Phnom Penh     +855 10 466 147     @Place</pre>
+          </ul>
+        </div>
+      </section>
     </footer>
-</body>
+  </body>  
 </html>

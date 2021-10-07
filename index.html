@@ -2,292 +2,239 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/home_page.css">
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-  crossorigin="anonymous"
-/>
-<link
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"
-/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home_page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- End Nav bar -->
+    <!-- End Nav bar -->
 
-  <!-- Start Slider -->
-  <div
-  id="myCarousel"
-  class="carousel slide"
-  data-bs-ride="carousel"
-  data-bs-pause="false"
->
-  <!-- Navigation Bar -->
-  <nav id=navContainer>
-    <span id="logo">Logo</span>
-    <ul class="head">
-      <li class="Nav" id="places" style="color: white;">Places
-          <div class="Dropdown">
-        <ul>
-          <li id="kind">Kind of place</li>
-          <li>Modern</li>
-          <li>Peaceful & Nature</li>
-          <li>Openspace</li>
-          <li>Indoor</li>
-          <li>Outdoor</li>
-          <li>Coffee Shops</li>
-          <li>Restuarants</li>
-          <li>Street Food</li>
-          <li>Adventurous</li>
-        </ul>
+    <!-- Start Slider -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <!-- Navigation Bar -->
+        <nav id=navContainer>
+            <span id="logo">Logo</span>
+            <ul class="head">
+                <li class="Nav" id="places" style="color: white;">Places
+                    <div class="Dropdown">
+                        <ul>
+                            <li id="kind">Kind of place</li>
+                            <li>Modern</li>
+                            <li>Peaceful & Nature</li>
+                            <li>Openspace</li>
+                            <li>Indoor</li>
+                            <li>Outdoor</li>
+                            <li>Coffee Shops</li>
+                            <li>Restuarants</li>
+                            <li>Street Food</li>
+                            <li>Adventurous</li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li class="Nav" style="color: white;">Activities
+                    <div class="Dropdown">
+                        <ul>
+                            <li>Eating & Drinking</li>
+                            <li>Entertaining</li>
+                            <li>Co-working</li>
+                            <li>Studying</li>
+                            <li>Shopping</li>
+                            <li>Sightseeing</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="Nav"><a href="./html/log_in.html" style="text-decoration: none; color: white;">Login</a></li>
+
+            </ul>
+
+        </nav>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-      </li>
-        
-     
-      <li class="Nav" style="color: white;">Activities
-        <div class="Dropdown">
-          <ul>
-          <li>Eating & Drinking</li>
-          <li>Entertaining</li>
-          <li>Co-working</li>
-          <li>Studying</li>
-          <li>Shopping</li>
-          <li>Sightseeing</li>
-        </ul>
-      </div>
-     </li>
-      <li class="Nav"><a href="./html/log_in.html" style="text-decoration: none; color: white;">Login</a></li>
-  
-    </ul>
-    
-  </nav>
-  <div class="carousel-indicators">
-    <button
-      type="button"
-      data-bs-target="#myCarousel"
-      data-bs-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#myCarousel"
-      data-bs-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#myCarousel"
-      data-bs-slide-to="2"
-      aria-label="Slide 3"
-    ></button>        <button
-    type="button"
-    data-bs-target="#myCarousel"
-    data-bs-slide-to="3"
-    aria-label="Slide 4"
-  ></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="slideImg" src="./assets/royal palace.jpg" alt="slider" />
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="slideImg" src="./assets/royal palace.jpg" alt="slider" />
+            </div>
+            <div class="carousel-item">
+                <img class="slideImg" src="./assets/central market.jpg" alt="slider" />
+            </div>
+            <div class="carousel-item">
+                <img class="slideImg" src="./assets/independent.jpg" alt="slider" />
+            </div>
+            <div class="carousel-item">
+                <img class="slideImg" src="./assets/stadium.jpg" alt="slider" />
+            </div>
+        </div>
+        <div id="Container">
+
+            <p
+                style="font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;font-size: 20px;line-height: 40px;text-shadow: 1px 1px black;">
+                <b>Finding Places to go doesn't have to be that hard and time consuming <br>
+                    Place is here to ease that burden from you <br>
+                    You go enjoy your day !</b> </p>
+
+            <div class="dropdown">
+                <button class="btn btn-light btnDropdown" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">Search...<span class="material-icons"> search
+                    </span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="btnDropdownItem">Region
+                        <select name="region" id="selectRegion" class="form-select-sm">
+                            <option value="All region">All region</option>
+                            <option value="Banteay Meanchey">Phnom Penh</option>
+                            <option value="Battambang">Battambang</option>
+                            <option value="Kampong Cham">Kampong Cham</option>
+                            <option value="Kampong Chhnang">Kampong Chhnang</option>
+                            <option value="Kampong Speu">Kampong Speu</option>
+                            <option value="Banteay Meanchey">Phnom Penh</option>
+                            <option value="Kampong Thom">Kampong Thom</option>
+                            <option value="Kampot">Kampot</option>
+                            <option value="Kandal">Kandal</option>
+                            <option value="Koh Kong">Koh Kong</option>
+                            <option value="Kratie">Kratie</option>
+                            <option value="Mondulkiri">Mondulkiri</option>
+                            <option value="Phnom Penh">Phnom Penh</option>
+                            <option value="Preah Vihear">Preah Vihear</option>
+                            <option value="Prey Veng">Prey Veng</option>
+                            <option value="Pursat">Pursat</option>
+                            <option value="Ratanak Kiri">Ratanak Kiri</option>
+                            <option value="Siem Reap">Siem Reap</option>
+                            <option value="Preah Sihanouk">Preah Sihanouk</option>
+                            <option value="Stung Treng">Stung Treng</option>
+                            <option value="Svay Rieng">Svay Rieng</option>
+                            <option value="Takeo">Takeo</option>
+                            <option value="Oddar Meanchey">Oddar Meanchey</option>
+                            <option value="Kep">Kep</option>
+                            <option value="Pailin">Pailin</option>
+                            <option value="Tboung Khmum">Tboung Khmum</option>
+                        </select>
+                    </li>
+                    <li class="btnDropdownItem">Kind of place
+                        <select name="place" id="selectPlace" class="form-select-sm">
+                            <option value="All place">All place</option>
+                            <option value="Modern">Modern</option>
+                            <option value="Peaceful">Peaceful</option>
+                            <option value="Nature">Nature</option>
+                            <option value="History">History</option>
+                            <option value="Outdoor">Outdoor</option>
+                            <option value="Indoor">Indoor</option>
+                            <option value="Event">Event</option>
+                        </select>
+                    </li>
+                    <li class="btnDropdownItem">Activity
+                        <select name="activity" id="selectActivity" class="form-select-sm">
+                            <option value="All activity">All activity</option>
+                            <option value="Shopping">Shopping</option>
+                            <option value="Sightseeing">Sightseeing</option>
+                            <option value="Eating & Drinking">Eating & Drinking</option>
+                            <option value="Learning">Learning</option>
+                            <option value="Entertaining">Entertaining</option>
+                        </select>
+                    </li>
+                    <li class="btnDropdownItem">
+                        <div class="btn btn-info btnSearch">Search</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img class="slideImg" src="./assets/central market.jpg" alt="slider" />
-    </div>
-    <div class="carousel-item">
-      <img class="slideImg" src="./assets/independent.jpg" alt="slider" />
-    </div>
-    <div class="carousel-item">
-      <img class="slideImg" src="./assets/stadium.jpg" alt="slider" />
-    </div>
-  </div>
-<div id="Container">
 
-<p>Finding Places to go doesn't have to be that hard and time consuming<br>
-  Place is here to ease that burden from you <br>
-  You go enjoy your day ! </p>
-
-  <div class="dropdown">
-    <button
-      class="btn btn-light btnDropdown"
-      type="button"
-      id="dropdownMenuButton1"
-      data-bs-toggle="dropdown"
-      aria-expanded="false"
-    >Search...<span class="material-icons"> search </span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li class="btnDropdownItem">Region
-         <select name="region" id="selectRegion" class="form-select-sm">
-            <option value="All region">All region</option>
-            <option value="Banteay Meanchey">Phnom Penh</option>
-            <option value="Battambang">Battambang</option>
-            <option value="Kampong Cham">Kampong Cham</option>
-            <option value="Kampong Chhnang">Kampong Chhnang</option>
-            <option value="Kampong Speu">Kampong Speu</option>
-            <option value="Banteay Meanchey">Phnom Penh</option>
-            <option value="Kampong Thom">Kampong Thom</option>
-            <option value="Kampot">Kampot</option>
-            <option value="Kandal">Kandal</option>
-            <option value="Koh Kong">Koh Kong</option>
-            <option value="Kratie">Kratie</option>
-            <option value="Mondulkiri">Mondulkiri</option>
-            <option value="Phnom Penh">Phnom Penh</option>
-            <option value="Preah Vihear">Preah Vihear</option>
-            <option value="Prey Veng">Prey Veng</option>
-            <option value="Pursat">Pursat</option>
-            <option value="Ratanak Kiri">Ratanak Kiri</option>
-            <option value="Siem Reap">Siem Reap</option>
-            <option value="Preah Sihanouk">Preah Sihanouk</option>
-            <option value="Stung Treng">Stung Treng</option>
-            <option value="Svay Rieng">Svay Rieng</option>
-            <option value="Takeo">Takeo</option>
-            <option value="Oddar Meanchey">Oddar Meanchey</option>
-            <option value="Kep">Kep</option>
-            <option value="Pailin">Pailin</option>
-            <option value="Tboung Khmum">Tboung Khmum</option>
-          </select>
-      </li>
-      <li class="btnDropdownItem">Kind of place
-        <select name="place" id="selectPlace" class="form-select-sm">
-            <option value="All place">All place</option>
-            <option value="Modern">Modern</option>
-            <option value="Peaceful">Peaceful</option>
-            <option value="Nature">Nature</option>
-            <option value="History">History</option>
-            <option value="Outdoor">Outdoor</option>
-            <option value="Indoor">Indoor</option>
-            <option value="Event">Event</option>
-        </select>
-    </li>
-    <li class="btnDropdownItem">Activity
-        <select name="activity" id="selectActivity" class="form-select-sm">
-            <option value="All activity">All activity</option>
-            <option value="Shopping">Shopping</option>
-            <option value="Sightseeing">Sightseeing</option>
-            <option value="Eating & Drinking">Eating & Drinking</option>
-            <option value="Learning">Learning</option>
-            <option value="Entertaining">Entertaining</option>
-        </select>
-    </li>
-    <li class="btnDropdownItem">
-     <div class="btn btn-info btnSearch">Search</div>
-    </li>
-    </ul>
-  </div>
-</div>
-</div>
-  <!-- End Slider -->
+    <!-- End Slider -->
 
 
-  <div class="team-grid">
+    <div class="team-grid">
+        <div class="container">
 
-    <div class="container">
+            <div class="row  people d-flex  justify-content-center">
+                <p style="color: black;margin-top: 10px;"> <b>Kind of places</b></p>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./assets/sora5.jpg)"
+                        onclick="window.location.href='./html/filter.html '">
 
-        <div class="row  people d-flex  justify-content-center">
-            <p style="color: black;margin-top: 10px;"> <b>Kind of places</b></p>
-            <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_1" style="background-image: url(./../assets/Test.jpg)"
-                    onclick="window.open">
-                    <div class="main_text">
-                        <h1>
-                            Modern</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
-                            viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                        </svg>
-                    </div>
-                    <div class="cover">
-
-                        <h3 class="name">Tim Cook</h3>
-                        <p class="title">Android Developer</p>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                        <div class="main_text">
+                            <h1>
+                                Modern </h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_2" style="background-image: url(https://images.unsplash.com/photo-1632163803231-123e953601b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1548&q=80)">
-                    <div class="main_text">
-                        <h1>
-                            Peaceful</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
-                            viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                        </svg>
-                    </div>
-                    <div class="cover">
-                        <h3 class="name">Michael Clarke</h3>
-                        <p class="title">Cricker</p>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(./assets/Kohrongsamloem2.jpeg) "
+                        onclick="window.location.href='./html/filter.html '">
+                        <div class="main_text">
+                            <h1>
+                                Peaceful</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_1" style="background-image: url(https://images.unsplash.com/photo-1621063223871-72880cf5eb51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80)"
-                    onclick="window.open">
-                    <div class="main_text">
-                        <h1>
-                            Nature</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
-                            viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                        </svg>
-                    </div>
-                    <div class="cover">
 
-                        <h3 class="name">Tim Cook</h3>
-                        <p class="title">Android Developer</p>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./assets/knorng_psa.jpg)"
+                        onclick="window.location.href='./html/filter.html '">
+                        <div class="main_text">
+                            <h1>
+                                Nature</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_2" style="background-image: url(./assets/Angkor\ Wat-Boy_Anupong.jpeg)"
+                        onclick="window.location.href='./html/filter.html '">
+                        <div class="main_text">
+                            <h1>
+                                History</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_2" style="background-image: url(https://images.unsplash.com/photo-1440948267132-cbf6e5f4bd88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2502&q=80)">
-                    <div class="main_text">
-                        <h1>
-                            History</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
-                            viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                        </svg>
-                    </div>
-                    <div class="cover">
-                        <h3 class="name">Michael Clarke</h3>
-                        <p class="title">Cricker</p>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p style="color: black;margin-top: 10px;"> <b>Places base on</b></p>
-            <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
-                    onclick="window.open">
-                    <div class="main_text">
+                <link rel="stylesheet" href="">
+                <p style="color: black;margin-top: 10px;"> <b>Places base on</b></p>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" id="card_1" style="background-image: url(./assets/aeonmall_sensokcity_6.jpeg)"
+                    onclick="window.location.href='./html/filter.html '">
+                        <div class=" main_text">
                         <h1>
                             Shopping</h1>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
@@ -296,19 +243,10 @@
                                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                         </svg>
                     </div>
-                    <div class="cover">
-
-                        <h3 class="name">Tim Cook</h3>
-                        <p class="title">Android Developer</p>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)" onclick="window.location.href='./html/filter.html '">
                     <div class="main_text">
                         <h1>
                             Sighseeing</h1>
@@ -318,19 +256,11 @@
                                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                         </svg>
                     </div>
-                    <div class="cover">
-                        <h3 class="name">Michael Clarke</h3>
-                        <p class="title">Cricker</p>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
-                    onclick="window.open">
+                <div class="box" id="card_1" style="background-image: url(./assets/kh_food.jpg)" onclick="window.location.href='./html/filter.html '">
                     <div class="main_text">
                         <h1>
                             Eating and Drinking</h1>
@@ -340,20 +270,12 @@
                                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                         </svg>
                     </div>
-                    <div class="cover">
-
-                        <h3 class="name">Tim Cook</h3>
-                        <p class="title">Android Developer</p>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
 
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                <div class="box" id="card_2" style="background-image: url(./assets/rose-city-golf-course-golfer.jpg)" onclick="window.location.href='./html/filter.html '">
                     <div class="main_text">
                         <h1>
                             Learning</h1>
@@ -363,14 +285,7 @@
                                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                         </svg>
                     </div>
-                    <div class="cover">
-                        <h3 class="name">Michael Clarke</h3>
-                        <p class="title">Cricker</p>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
             <div class="col-md-4 col-lg-12 item">
@@ -381,19 +296,21 @@
                         places for later?
                     </p>
                     <br>
-                    <button type="button" class="btn btn-info"><a href="./html/sign_up.html" style="text-decoration: none; color: white;">Get Start!</a></button>
+                    <button type="button" class="btn btn-info"><a href="./html/sign_up.html"
+                            style="text-decoration: none; color: white;">Get Start!</a></button>
 
 
 
                 </div>
             </div>
+           
             <p style="color: black;margin-top: 10px;"> <b>Places in Phnom Penh</b></p>
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
-                    onclick="window.open">
+                <div class="box" id="card_1" style="background-image: url(./assets/vattanac\ capital.jpg)"
+                onclick="window.location.href='./Provinces/Vattanac_Capital.html '">
                     <div class="main_text">
                         <h1>
-                            Modern</h1>
+                            Vattanac Capital</h1>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -402,8 +319,9 @@
                     </div>
                     <div class="cover">
 
-                        <h3 class="name">Tim Cook</h3>
-                        <p class="title">Android Developer</p>
+
+                        <p class="title">Vattanac Capital Tower is a 187.3-metre (615 ft), 39-storey building in
+                            Phnom Penh, Cambodia.</p>
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
                                     class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
@@ -412,32 +330,11 @@
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                <div class="box" id="card_2" style="background-image: url(./assets/garden_city_water_park.jpg)"
+                onclick="window.location.href='./Provinces/Garden_City.html '">
                     <div class="main_text">
                         <h1>
-                            Peaceful</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
-                            viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                        </svg>
-                    </div>
-                    <div class="cover">
-                        <h3 class="name">Michael Clarke</h3>
-                        <p class="title">Cricker</p>
-                        <div class="social">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
-                    onclick="window.open">
-                    <div class="main_text">
-                        <h1>
-                            Modern</h1>
+                            Garden City </h1>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -446,8 +343,9 @@
                     </div>
                     <div class="cover">
 
-                        <h3 class="name">Tim Cook</h3>
-                        <p class="title">Android Developer</p>
+                        <p class="title">Garden City Water Park is a new first Asia’s top entertainment filled with
+                            family lifestyle activities for all ages that captures the heart of individuals and each
+                            member, located in Phnom Penh. </p>
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
                                     class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
@@ -455,12 +353,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                <div class="box" id="card_1" style="background-image: url(./assets/wat\ phnom.jpg)"
+                onclick="window.location.href='./Provinces/Wat_Phnom.html '">
                     <div class="main_text">
                         <h1>
-                            Peaceful</h1>
+                            Wat Phnom</h1>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -468,8 +366,33 @@
                         </svg>
                     </div>
                     <div class="cover">
-                        <h3 class="name">Michael Clarke</h3>
-                        <p class="title">Cricker</p>
+
+
+                        <p class="title">Inside the tree, she found four bronze statues of Buddha and a stone Buddha. She asked the people in the village to build a temple on the mountain to protect the sacred statue.</p>
+                        <div class="social">
+                            <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
+                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="col-md-4 col-lg-3 item">
+                <div class="box" id="card_2" style="background-image: url(./assets/aqua\ mekong\ cruise.jpg)"   onclick="window.location.href='./Provinces/aqua_mekong_cruise.html '">
+                    <div class="main_text">
+                        <h1>
+                            Aqua Mekong Cruise</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </div>
+                    <div class="cover">
+
+                        <p class="title">The sustainably crafted ship’s 20 designer suites – the river’s largest
+                            guestrooms — overlook the Mekong through floor-to-ceiling windows.</p>
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
                                     class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
@@ -479,11 +402,11 @@
             </div>
             <p style="color: black;margin-top: 10px;"> <b>Provinces</b></p>
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
-                    onclick="window.open">
+                <div class="box" id="card_1" style="background-image: url(./assets/Areng\ valley.jpg)"
+                onclick="window.location.href='./Provinces/ArengValley.html'">
                     <div class="main_text">
                         <h1>
-                            Modern</h1>
+                            Areng Valley</h1>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -492,8 +415,8 @@
                     </div>
                     <div class="cover">
 
-                        <h3 class="name">Tim Cook</h3>
-                        <p class="title">Android Developer</p>
+                       
+                        <p class="title">Steung Areng is located in the Cardamom Rainforest Landscape, the largest mainland rainforest in Southeast Asia. The area is one of Asia’s seven remaining elephant corridors and is home to the last wild population of Siamese crocodiles and Royal Turtles on earth. </p>
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
                                     class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
@@ -502,10 +425,10 @@
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                <div class="box" id="card_2" style="background-image: url(./assets/kirirom\ .jpeg)"onclick="window.location.href='./Provinces/Kirirom.html'" >
                     <div class="main_text">
                         <h1>
-                            Peaceful</h1>
+                            Kirirom National Park</h1>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -513,8 +436,8 @@
                         </svg>
                     </div>
                     <div class="cover">
-                        <h3 class="name">Michael Clarke</h3>
-                        <p class="title">Cricker</p>
+                        
+                        <p class="title">Kirirom National Park, a high altitude plateau, is known for its unique high elevation pine forest, which forms the headwaters for numerous streams feeding Kampong Speu Town.</p>
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
                                     class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
@@ -523,11 +446,11 @@
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_1" style="background-image: url(./../assets/songsa2.jpg)"
-                    onclick="window.open">
+                <div class="box" id="card_1" style="background-image: url(./assets/yeak\ loam.jpeg)"
+                onclick="window.location.href='./Provinces/Lake_Yeak_Laom.html'">
                     <div class="main_text">
                         <h1>
-                            Modern</h1>
+                            Lake Yeak Laom</h1>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -536,8 +459,8 @@
                     </div>
                     <div class="cover">
 
-                        <h3 class="name">Tim Cook</h3>
-                        <p class="title">Android Developer</p>
+                       
+                        <p class="title">Yeak Laom Lake is a crater lake and a tourist destination in Yeak Laom commune, Ban Lung District, Ratanakiri Provincenorth-eastern Cambodia.</p>
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
                                     class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
@@ -546,10 +469,10 @@
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 item">
-                <div class="box" id="card_2" style="background-image: url(./../assets/songsa2.jpg)">
+                <div class="box" id="card_2" style="background-image: url(./assets/kompong_trach.jpeg)" onclick="window.location.href='./Provinces/Kompong.html'">
                     <div class="main_text">
                         <h1>
-                            Peaceful</h1>
+                            Kampong Trach</h1>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
                             viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -557,8 +480,10 @@
                         </svg>
                     </div>
                     <div class="cover">
-                        <h3 class="name">Michael Clarke</h3>
-                        <p class="title">Cricker</p>
+                       
+                        <p class="title">
+                            Phnom Kampong Trach Cave is located in South Damnak Kantot commune, Kampong Trach district, Kampot province, which is nearly 38 kilometers to the East of Kampot provincial town.
+                            </p>
                         <div class="social">
                             <a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
                                     class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
@@ -569,12 +494,11 @@
         </div>
     </div>
 
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-  crossorigin="anonymous"
-></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -583,9 +507,10 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
-   
-      
+
+
 </head>
+
 <body>
     <footer>
         <section class="footer">
@@ -597,10 +522,13 @@
                                 <h5>More Activity</h5>
                             </li>
                             <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Shopping</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Sightseeing</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Eating & Drinking</a></li>
+                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Sightseeing</a>
+                            </li>
+                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Eating &
+                                    Drinking</a></li>
                             <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Learning</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Entertaining</a></li>
+                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Entertaining</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -626,11 +554,13 @@
                                 <h5>More Region</h5>
                             </li>
                             <li> <a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kampot</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Sihanouk Ville</a></li>
+                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Sihanouk
+                                    Ville</a></li>
                             <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Koh Kong</a></li>
                             <li> <a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kep</a></li>
                             <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); "> Kratie</a></li>
-                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kampong Cham</a></li>
+                            <li><a href="#" style="text-decoration: none; color: rgb(199, 249, 255); ">Kampong Cham</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -644,4 +574,5 @@
         </section>
     </footer>
 </body>
+
 </html>

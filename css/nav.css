@@ -1,0 +1,116 @@
+/* start Nav-bar */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#navContainer {
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+  z-index: 1;
+  padding: 10px;
+}
+#logo {
+  position: absolute;
+}
+.head {
+  float: right;
+  margin-right: 20px;
+ 
+}
+.Nav {
+  list-style-type: none;
+  margin-top: 25px;
+  display: inline-flex;
+  padding-left: 30px;
+  color: rgb(0, 0, 0);
+  
+}
+.Dropdown ul li {
+  list-style-type: none;
+  padding-bottom: 20px;
+  color: black;
+}
+.Dropdown ul li:hover {
+  list-style-type: none;
+  padding-bottom: 20px;
+  color: black;
+  /* background-color: rgb(21, 162, 184); */
+}
+.Dropdown {
+  display: none;
+  position: absolute;/*  only dak absolute can we dak z-index */
+  z-index: 1;
+  /* padding: 5px 2px; */
+  margin-top: 20px;
+}
+.Nav:hover .Dropdown {
+  display: block; 
+}
+.Dropdown .kind{
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  
+}
+.Dropdown .kind:hover{
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+
+}
+.Nav .Dropdown a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+}
+.Nav .Dropdown a:hover{
+  text-decoration:underline;
+  font-weight: 700;
+}
+#login{
+    text-decoration: none;
+}
+#favorite{
+    text-decoration: none;
+}
+#region{
+  text-decoration: none;
+}
+@media only screen and (max-width: 550px) {
+  /* mobile screen */
+  #logo {
+    color: rgb(0, 0, 0);
+    margin-top: 21px;
+    margin-left: 20px;
+  }
+  .head {
+    margin-right: 15px;
+  }
+  .Nav {
+    margin-top: 5px;
+    padding-left: 30px;
+  }
+  .Dropdown {
+    background-color: rgba(21, 162, 184, 1);
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 551px) /* desktop & tablet*/ {
+  #logo {
+    color: rgb(0, 0, 0);
+    margin-top: 17px;
+    margin-left: 5%;
+  }
+  .head {
+    margin-right: 5%;
+  }
+  .Nav {
+    margin-top: 5px;
+    padding-left: 50px;
+  }
+  .Dropdown {
+    background-color: rgba(21, 162, 184, 1);
+    width: 200px;
+  }
+}
+/* End Nav bar */

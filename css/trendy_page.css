@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: none;
+}
+
+.col-sm-4 {
+    border: 1px solid black;
+    height: 100%;
+}
+
+.main_text h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 240px;
+    float: left;
+    margin-left: 20px;
+}
+
+
+.main_text svg {
+    width: 30px;
+    margin-top: 240px;
+    float: left;
+    margin-left: 20px;
+}
+
+#card_1:hover .main_text {
+    display: none;
+}
+
+#card_2:hover .main_text {
+    display: none;
+}
+
+.btn-info {
+
+    margin-left: 20px;
+    margin-top: 80px;
+    float: left;
+
+}
+
+.trendy h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 240px;
+
+
+}
