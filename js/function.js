@@ -50,7 +50,7 @@ if(stored_users) {
     for (let u = 0; u < stored_users.length; u++){
         if (usrEmail == stored_users[u].email && usrPw == stored_users[u].password) {
             alert('You are logged in ');
-            return location.replace("./already_login_page.html");
+            return location.replace("./alogin.html");
 
          }
     }
